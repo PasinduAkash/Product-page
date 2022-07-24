@@ -1,0 +1,352 @@
+/* Layout */
+
+*, body {
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    min-height: 100%;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1rem;
+  
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+nav, .item-added, .number-cart, .number, .secondary-images, .avatar-box, .option-list, .head-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* navbar */
+nav {
+padding: 1em 2em 1em;
+border-bottom: 1px solid grey;
+
+}
+
+.sidebar-menu {
+    height: 100%;
+    width: 50%;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    z-index: 2;
+    visibility: hidden;
+}
+
+div > i, .close, .avatar, .thumbnail, .number svg, .add-to-cart {
+    cursor: pointer;
+}
+
+.head-box {
+    align-items: baseline;
+}
+
+.brand-title {
+    font-weight: 700;
+    margin-left: 0.5em;
+}
+
+.option-list {
+    list-style: none;
+    flex-direction: column;
+    margin-top: 0.5em;
+}
+
+.option-list-ls {
+    list-style: none;
+    display: none;
+    
+}
+
+.remove {
+    visibility: visible;
+}
+
+.option, .option-ls {
+    margin: 0.5em 1em 0.5em 0.5em;
+}
+
+.avatar-box {
+    align-items: center;
+}
+
+.avatar {
+    margin-left: 1em;
+    width: 30px;
+}
+
+.avatar-click {
+    border: 3px solid hsl(26, 100%, 55%);
+    border-radius: 50%;
+}
+/* product page */
+
+.cart-card {
+    width: 92%;
+    height: 30%;
+    margin: 1em;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.card-visible {
+    display: none;
+}
+
+.card-head {
+    margin: 1em;
+}
+
+.card-para {
+    margin: 4em 0;
+ text-align: center;
+ font-weight: bold;
+ display: block;
+}
+
+hr {
+    border-top: 2px solid hsl(220, 14%, 75%);
+    border-bottom: 0;
+
+}
+
+.images-box, .thumbnail {
+width: 100%;
+}
+
+.product-description {
+margin: 0 2em;
+}
+
+.secondary-images {
+    display: none;
+    padding: 1em 0;
+   
+}
+
+.small-pic {
+    width: 23%;
+    border-radius: 10px;
+}
+
+.next-right, .next-left {
+    position: absolute;
+    top: 200px;
+    border: 0;
+border-radius: 50%;
+background-color: #fff;
+color: #000;
+width: 50px;
+height: 50px;
+font-size: 1.5rem;
+font-weight: bold;
+cursor: pointer;
+}
+
+.next-left {
+    left: 20px;
+}
+
+.next-right {
+   right: 20px;
+}
+
+.price-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.sneaker-company {
+    color: hsl(26, 100%, 55%);
+    font-size: 0.75em;
+    font-weight: 700;
+    margin-top: 1.5em;
+}
+
+.product-info-title {
+    margin: 0.5em 0 0.5em;
+    font-size: 300;
+}
+
+.product-info, .original-price, .option, .card-para, .icon-delete, .cart-des, .option-ls {
+    color: gray;
+}
+
+.product-info {
+    margin-bottom: 1em;
+}
+
+.discount-price {
+    margin-right: 0.5em;
+}
+
+.number {
+    align-items: center;
+    background-color: hsl(223, 64%, 98%);
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.number-cart {
+    flex-direction: column;
+    margin-top: 1em;
+    padding: 0 ;
+}
+
+.discount {
+    color:hsl(26, 100%, 55%);
+    background-color: hsl(223, 64%, 98%);
+    border-radius: 2px;
+    font-size: 0.75em;
+    font-weight: 700;
+    padding: 0.1em 0.3em;
+}
+
+.amount {
+    font-weight: 700;
+}
+
+.original-price {
+    position: absolute;
+    right: 2em;
+    bottom: 8em; 
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.add-to-cart {
+    background-color: hsl(26, 100%, 55%);
+    border: 0;
+    border-radius: 10px;
+   margin-top: 1em;
+    padding: 1em 0;   
+}
+
+.add-to-cart, .white-cart {
+    color: white;
+    font-weight: 700;
+}
+
+.add-to-cart:hover,
+.add-to-cart:focus {
+    background-color: hsl(25, 100%, 94%);
+}
+
+.item-added {
+    position: relative;
+    padding: 1em 1.2em;
+   visibility: hidden;
+
+}
+
+ .item-added img{
+width: 20%;
+border-radius: 5px;
+ }
+
+ .cart-added-description {
+    margin-left: 1em;
+    position: relative;
+    width: 75%;
+ }
+
+ .icon-delete {
+    position: absolute;
+    right: 10px;
+    bottom: 40px;
+
+ }
+
+.checkout-button {
+    padding: 1em;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    border: 0; 
+    border-radius: 10px;
+    width: 90%;
+    font-weight: bold;
+    margin-left: 1.5em;
+    cursor: pointer;
+    display: none;
+    
+}
+
+.total-price {
+    font-weight: bold;
+    position: absolute;
+    right: 100px;
+    bottom: 40px;
+}
+
+
+@media (min-width: 675px) {
+
+.container {
+    max-width: 900px;
+    min-height: 100%;
+}
+
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3em 0 0;
+    }
+
+    .secondary-images {
+        display: block;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .small-pic {
+        width: 20%;
+        margin: 0 0.5em;
+        cursor: pointer;
+    }
+
+    .next-left, .next-right, .hamburger-icon {
+        display: none;
+    }
+
+    .images-box, .cart-card {
+        width: 50%;
+    }
+
+    .product-description {
+        width: 40%;
+    }
+
+    .thumbnail {
+        border-radius: 10px;
+    }
+
+    .original-price {
+       position: static;
+    }
+
+    .option-list-ls {
+        display: flex;
+    }
+
+    .cart-card {
+        right: 10px;
+        height: 250px;
+    }
+
+}
